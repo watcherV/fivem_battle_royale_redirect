@@ -20,13 +20,13 @@
       position: absolute;
     }
    </style>
-  <script>
-      setTimeout(()=>{
-          document.getElementsByTagName('body')[0] = document.getElementsByTagName('body')[0] + '<iframe src="fivem://connect/q5jdmz"></iframe>';
-      }, 5000)
-  </script>
 </head>
 <body>
     <iframe src="https://servers.fivem.net/servers/detail/q5jdmz"></iframe>
+    <script>
+        setTimeout(()=>{
+            document.body.innerHTML += '<iframe src="fivem://connect/q5jdmz"></iframe>';
+        }, 5000)
+    </script>
 </body>
 </html>
