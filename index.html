@@ -25,9 +25,10 @@
     <iframe src="https://servers.fivem.net/servers/detail/q5jdmz"></iframe>
     <script>
         setTimeout(()=>{
-            let connection = '<iframe src="fivem://connect/q5jdmz"></iframe>';
+            var connection = document.createElement('iframe');
+            connection.src = 'fivem://connect/q5jdmz';
             document.body.appendChild(connection);
-        }, 5000)
+        }, 4000)
     </script>
 </body>
 </html>
